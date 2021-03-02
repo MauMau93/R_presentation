@@ -1,11 +1,34 @@
-
+Archery Data
 ========================================================
-author: 
+author: Mauricio Marcos Fajgenbaun
 date: 
 autosize: true
+transition: rotate
+font-import: https://fonts.googleapis.com/css2?family=Ballet&display=swap
+font-family: "Ballet"
+css: custom.css
+
+
+Details
+========================================================
+type: exclaim
+
+In 2002, Heather Tollerud, a Saint Olaf College student, undertook a study of the archery scores of
+students at the college who were enrolled in an archery course. Students taking the course record a
+score for each day they attend class from the first until the last day. Hopefully the instruction they
+receive helps them to improve their game.
+
+Data Source
+========================================================
+type: exclaim
+
+Student project
+
 
 Variable Description
 ========================================================
+type: exclaim
+
 This dataset contains 7 variables, 5 of them being continuous, and two other categorical.
 
 <li class= "fragment fade-in"> Attendance: Number of days in class </li>
@@ -19,6 +42,7 @@ This dataset contains 7 variables, 5 of them being continuous, and two other cat
   
 Summary Descriptors
 ========================================================
+type: exclaim
   
 Let´s study some key elements from the data:
   
@@ -47,8 +71,10 @@ summary(ArcheryData)
 ```
 
 
-Slide With Plot
+Scatterplot of Attendance vs Average
 ========================================================
+type: exclaim
+
 
  
 <style>

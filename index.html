@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Archery Data</title>
     
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -50,6 +50,7 @@
   src: local('News Cycle Bold'), local('NewsCycle-Bold'), url('NewsCycle-Bold.ttf') format('truetype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
 
   </style>    
     
@@ -547,7 +548,7 @@ body {
 
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: "Ballet", sans-serif;
 }
   
 .reveal h1,
@@ -556,10 +557,21 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  font-family: "News Cycle", Impact, sans-serif;
+  font-family: "Ballet", Impact, sans-serif;
 }
 
+.exclaim .reveal .state-background {
+  background: green;
+} 
 
+.exclaim .reveal div {
+  color: white;
+  font-family: 'Lacquer';
+}
+
+.exclaim .reveal code {
+  color: red;
+}
 
   </style>
   
@@ -783,15 +795,34 @@ hljs.initHighlightingOnLoad();
   <div class="reveal">
   <div class="slides">
 
-<section data-state="section" data-transition="linear" data-transition-speed="default">
-<h1></h1><p></p>
+<section data-state="section" data-transition="default" data-transition-speed="default">
+<h1>Archery Data</h1><p>Mauricio Marcos Fajgenbaun</p>
 
-<div class="slideContent noTitle" >
+<div class="slideContent" >
 
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-state="exclaim" data-transition="default" data-transition-speed="default">
+<h3>Details</h3>
+<div class="slideContent" >
+<p>In 2002, Heather Tollerud, a Saint Olaf College student, undertook a study of the archery scores of
+students at the college who were enrolled in an archery course. Students taking the course record a
+score for each day they attend class from the first until the last day. Hopefully the instruction they
+receive helps them to improve their game.</p>
+
+</div>
+
+</section>
+<section data-state="exclaim" data-transition="default" data-transition-speed="default">
+<h3>Data Source</h3>
+<div class="slideContent" >
+<p>Student project</p>
+
+</div>
+
+</section>
+<section data-state="exclaim" data-transition="default" data-transition-speed="default">
 <h3>Variable Description</h3>
 <div class="slideContent" >
 <p>This dataset contains 7 variables, 5 of them being continuous, and two other categorical.</p>
@@ -807,7 +838,7 @@ hljs.initHighlightingOnLoad();
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-state="exclaim" data-transition="default" data-transition-speed="default">
 <h3>Summary Descriptors</h3>
 <div class="slideContent" >
 <p>Let´s study some key elements from the data:</p>
@@ -834,8 +865,8 @@ hljs.initHighlightingOnLoad();
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Slide With Plot</h3>
+<section data-state="exclaim" data-transition="default" data-transition-speed="default">
+<h3>Scatterplot of Attendance vs Average</h3>
 <div class="slideContent" >
 <style>
   .p_iframe iframe {
@@ -902,7 +933,7 @@ function commandsForSlide(indexh) {
       rollingLinks: false,
       
       theme: 'simple', 
-      transition: 'linear',
+      transition: 'default',
       transitionSpeed: 'default',
       rtl: false,
       width: 960,
