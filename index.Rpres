@@ -20,7 +20,7 @@ This dataset contains 7 variables, 5 of them being continuous, and two other cat
 Summary Descriptors
 ========================================================
   
-  Let´s study some key elements from the data:
+Let´s study some key elements from the data:
   
 ```{r, include=FALSE}
 library("Stat2Data")
@@ -30,3 +30,34 @@ data(ArcheryData)
 ```{r}
 summary(ArcheryData)
 ```
+
+Slide With Plot
+========================================================
+
+
+Slide With Plotly
+========================================================
+```{r, include=FALSE}
+library(plotly)
+ 
+x <- c(1:20)
+y <- x*x
+
+data <- data.frame(x,y)
+
+pp <- plot_ly(data, x=~x, y=~y, name="cuadratic", type="scatter")
+
+htmlwidgets::saveWidget(pp,"plotlyp.html")
+```
+ 
+<style>
+  .p_iframe iframe {
+    width:90%;
+    height:576px;
+}
+</style>
+
+<div class="p_iframe">
+<iframe frameborder="0" seamless='seamless' scrolling=no src="plotlyp.html"></iframe>
+</div>
+

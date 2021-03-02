@@ -20,7 +20,7 @@ This dataset contains 7 variables, 5 of them being continuous, and two other cat
 Summary Descriptors
 ========================================================
   
-  Let´s study some key elements from the data:
+Let´s study some key elements from the data:
   
 
 
@@ -45,3 +45,23 @@ summary(ArcheryData)
  3rd Qu.: 90.00   3rd Qu.:1.0000  
  Max.   :142.00   Max.   :1.0000  
 ```
+
+Slide With Plot
+========================================================
+
+
+Slide With Plotly
+========================================================
+
+ 
+<style>
+  .p_iframe iframe {
+    width:90%;
+    height:576px;
+}
+</style>
+
+<div class="p_iframe">
+<iframe frameborder="0" seamless='seamless' scrolling=no src="plotlyp.html"></iframe>
+</div>
+
