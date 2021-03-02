@@ -1,13 +1,11 @@
-Archery Data
+Archery Data Analysis
 ========================================================
 author: Mauricio Marcos Fajgenbaun
-date: february 2021
+date: February 2021
 autosize: true
 transition: rotate
-font-import: https://fonts.googleapis.com/css2?family=Ballet&display=swap
-font-family: "Ballet"
+font-family: "Helvetica"
 css: custom.css
-
 
 
 Details
@@ -15,23 +13,33 @@ Details
 type: exclaim
 
 </br></br>
-In 2002, Heather Tollerud, a Saint Olaf College student, undertook a study of the archery scores of
+In 2002, Heather Tollerud, a Saint Olaf College student, undertook a study of the **archery scores** of
 students at the college who were enrolled in an archery course. Students taking the course record a
 score for each day they attend class from the first until the last day. Hopefully the instruction they
 receive helps them to improve their game.
 
-Data Source
+Motivation
 ========================================================
 type: exclaim
+incremental: true
 
+</br></br>
+
+In this research, I intend to analyze the relationship between the *attandance* of the participants and the *improvement* they had.
+
+For this, I will use a dataset containing information about 18 participants and their personal characteristics. 
+
+
+Who here likes to practice archery?
+========================================================
+type: exclaim
+incremental: true
 
 ![source: "https://stepoutside.org/article/10-best-archery-outfitters-in-michigan/"](archery_image.jpg)
-***
-</br> </br>
 
-First done as a student project
-
-Source: [CRAN: Stat2Data pacakage](cran.r-project.org/web/packages/Stat2Data/Stat2Data.pdf)
+```markdown
+source:"https://stepoutside.org/article/10-best-archery-outfitters-in-michigan/"
+```
 
 Variable Description
 ========================================================
@@ -47,37 +55,23 @@ This dataset contains 7 variables, 5 of them being continuous, and two other cat
 <li class= "fragment fade-in"> Improvement: Last day - first day score </li>
 <li class= "fragment fade-in"> Improve: 1=improved or 0=did not improve </li>
   
-  
-Summary Descriptors
+
+
+Attandance Behaviour
 ========================================================
 type: exclaim
+incremental: true
   
-Let´s study some key elements from the data:
+Let´s take a look at the attandance of the participants according to their sex:
   
 
 
-
-```r
-summary(ArcheryData)
-```
-
-```
-   Attendance       Average       Sex         Day1          LastDay     
- Min.   :16.00   Min.   : 66.82   f: 8   Min.   : 16.0   Min.   : 49.0  
- 1st Qu.:20.00   1st Qu.: 97.72   m:10   1st Qu.: 57.5   1st Qu.:133.8  
- Median :21.00   Median :141.22          Median :121.0   Median :177.5  
- Mean   :20.72   Mean   :141.83          Mean   :112.9   Mean   :169.7  
- 3rd Qu.:22.00   3rd Qu.:183.66          3rd Qu.:160.8   3rd Qu.:217.2  
- Max.   :22.00   Max.   :229.62          Max.   :201.0   Max.   :255.0  
-  Improvement        Improve      
- Min.   :-10.00   Min.   :0.0000  
- 1st Qu.: 25.00   1st Qu.:1.0000  
- Median : 48.50   Median :1.0000  
- Mean   : 56.83   Mean   :0.8333  
- 3rd Qu.: 90.00   3rd Qu.:1.0000  
- Max.   :142.00   Max.   :1.0000  
-```
-
+![plot of chunk unnamed-chunk-2](index-figure/unnamed-chunk-2-1.png)
+***
+</br></br></br></br>
+We can say, that it looks like women have attended (in proportion) more time the classes than man.
+</br></br>
+Also, there seem to be a minority of man who have not attended a lot of instruction classes.
 
 Scatterplot of Attendance vs Average Score
 ========================================================

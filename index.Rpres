@@ -1,13 +1,11 @@
-Archery Data
+Archery Data Analysis
 ========================================================
 author: Mauricio Marcos Fajgenbaun
-date: february 2021
+date: February 2021
 autosize: true
 transition: rotate
-font-import: https://fonts.googleapis.com/css2?family=Ballet&display=swap
-font-family: "Ballet"
+font-family: "Helvetica"
 css: custom.css
-
 
 
 Details
@@ -15,23 +13,33 @@ Details
 type: exclaim
 
 </br></br>
-In 2002, Heather Tollerud, a Saint Olaf College student, undertook a study of the archery scores of
+In 2002, Heather Tollerud, a Saint Olaf College student, undertook a study of the **archery scores** of
 students at the college who were enrolled in an archery course. Students taking the course record a
 score for each day they attend class from the first until the last day. Hopefully the instruction they
 receive helps them to improve their game.
 
-Data Source
+Motivation
 ========================================================
 type: exclaim
+incremental: true
 
+</br></br>
+
+In this research, I intend to analyze the relationship between the *attandance* of the participants and the *improvement* they had.
+
+For this, I will use a dataset containing information about 18 participants and their personal characteristics. 
+
+
+Who here likes to practice archery?
+========================================================
+type: exclaim
+incremental: true
 
 ![source: "https://stepoutside.org/article/10-best-archery-outfitters-in-michigan/"](archery_image.jpg)
-***
-</br> </br>
 
-First done as a student project
-
-Source: [CRAN: Stat2Data pacakage](cran.r-project.org/web/packages/Stat2Data/Stat2Data.pdf)
+```markdown
+source:"https://stepoutside.org/article/10-best-archery-outfitters-in-michigan/"
+```
 
 Variable Description
 ========================================================
@@ -47,22 +55,29 @@ This dataset contains 7 variables, 5 of them being continuous, and two other cat
 <li class= "fragment fade-in"> Improvement: Last day - first day score </li>
 <li class= "fragment fade-in"> Improve: 1=improved or 0=did not improve </li>
   
-  
-Summary Descriptors
+
+
+Attandance Behaviour
 ========================================================
 type: exclaim
+incremental: true
   
-Let´s study some key elements from the data:
+Let´s take a look at the attandance of the participants according to their sex:
   
 ```{r, include=FALSE}
 library("Stat2Data")
+library(ggplot2)
 data(ArcheryData)
 ```
 
-```{r}
-summary(ArcheryData)
+```{r,echo=FALSE}
+ggplot(data=ArcheryData,aes(x=Attendance,fill=Sex))+geom_bar()+ggtitle("Bar Plot for Attendance by Sex")
 ```
-
+***
+</br></br></br></br>
+We can say, that it looks like women have attended (in proportion) more time the classes than man.
+</br></br>
+Also, there seem to be a minority of man who have not attended a lot of instruction classes.
 
 Scatterplot of Attendance vs Average Score
 ========================================================
