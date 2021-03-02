@@ -46,11 +46,8 @@ summary(ArcheryData)
  Max.   :142.00   Max.   :1.0000  
 ```
 
+
 Slide With Plot
-========================================================
-
-
-Slide With Plotly
 ========================================================
 
  
@@ -62,6 +59,6 @@ Slide With Plotly
 </style>
 
 <div class="p_iframe">
-<iframe frameborder="0" seamless='seamless' scrolling=no src="plotlyp.html"></iframe>
+<iframe frameborder="0" seamless='seamless' scrolling=no src="plotly.html"></iframe>
 </div>
 

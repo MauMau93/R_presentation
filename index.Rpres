@@ -31,23 +31,21 @@ data(ArcheryData)
 summary(ArcheryData)
 ```
 
+
 Slide With Plot
-========================================================
-
-
-Slide With Plotly
 ========================================================
 ```{r, include=FALSE}
 library(plotly)
  
-x <- c(1:20)
-y <- x*x
+library(plotly)
+library("Stat2Data")
+data(ArcheryData)
+head(ArcheryData)
+p <- ArcheryData %>%
+  plot_ly(x = ~Attendance, y = ~Average) %>%
+  add_markers()
 
-data <- data.frame(x,y)
-
-pp <- plot_ly(data, x=~x, y=~y, name="cuadratic", type="scatter")
-
-htmlwidgets::saveWidget(pp,"plotlyp.html")
+htmlwidgets::saveWidget(p,"plotly.html")
 ```
  
 <style>
@@ -58,6 +56,6 @@ htmlwidgets::saveWidget(pp,"plotlyp.html")
 </style>
 
 <div class="p_iframe">
-<iframe frameborder="0" seamless='seamless' scrolling=no src="plotlyp.html"></iframe>
+<iframe frameborder="0" seamless='seamless' scrolling=no src="plotly.html"></iframe>
 </div>
 
