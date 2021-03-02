@@ -35,17 +35,15 @@ Who here likes to practice archery?
 type: exclaim
 incremental: true
 
-![source: "https://stepoutside.org/article/10-best-archery-outfitters-in-michigan/"](archery_image.jpg)
-
-```markdown
-source:"https://stepoutside.org/article/10-best-archery-outfitters-in-michigan/"
-```
+![Taken from stepouside.org](archery_image.jpg)
 
 Variable Description
 ========================================================
 type: exclaim
 
 This dataset contains 7 variables, 5 of them being continuous, and two other categorical.
+
+</br>
 
 <li class= "fragment fade-in"> Attendance: Number of days in class </li>
 <li class= "fragment fade-in"> Average score over all days </li>
@@ -69,7 +67,7 @@ Let´s take a look at the attandance of the participants according to their sex:
 ![plot of chunk unnamed-chunk-2](index-figure/unnamed-chunk-2-1.png)
 ***
 </br></br></br></br>
-We can say, that it looks like women have attended (in proportion) more time the classes than man.
+We can say, that it looks like women have attended (in proportion) more classes than man.
 </br></br>
 Also, there seem to be a minority of man who have not attended a lot of instruction classes.
 
