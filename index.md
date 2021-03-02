@@ -1,7 +1,7 @@
 Archery Data
 ========================================================
 author: Mauricio Marcos Fajgenbaun
-date: 
+date: february 2021
 autosize: true
 transition: rotate
 font-import: https://fonts.googleapis.com/css2?family=Ballet&display=swap
@@ -9,10 +9,12 @@ font-family: "Ballet"
 css: custom.css
 
 
+
 Details
 ========================================================
 type: exclaim
 
+</br></br>
 In 2002, Heather Tollerud, a Saint Olaf College student, undertook a study of the archery scores of
 students at the college who were enrolled in an archery course. Students taking the course record a
 score for each day they attend class from the first until the last day. Hopefully the instruction they
@@ -22,8 +24,14 @@ Data Source
 ========================================================
 type: exclaim
 
-Student project
 
+![source: "https://stepoutside.org/article/10-best-archery-outfitters-in-michigan/"](archery_image.jpg)
+***
+</br> </br>
+
+First done as a student project
+
+Source: [CRAN: Stat2Data pacakage](cran.r-project.org/web/packages/Stat2Data/Stat2Data.pdf)
 
 Variable Description
 ========================================================
@@ -71,9 +79,10 @@ summary(ArcheryData)
 ```
 
 
-Scatterplot of Attendance vs Average
+Scatterplot of Attendance vs Average Score
 ========================================================
 type: exclaim
+id: slide1
 
 
  
@@ -88,3 +97,14 @@ type: exclaim
 <iframe frameborder="0" seamless='seamless' scrolling=no src="plotly.html"></iframe>
 </div>
 
+
+
+Any questions?
+====================================
+type: exclaim
+
+</br>
+The plot that was showed before is of crucial importance to the understanding of the effect that attandance had in the average score of the participants. So if something was unclear, we can review it:
+
+</br> </br> </br>
+[Go back to plot](#/slide1)
