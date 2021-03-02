@@ -1,0 +1,32 @@
+
+========================================================
+author: 
+date: 
+autosize: true
+
+Variable Description
+========================================================
+This dataset contains 7 variables, 5 of them being continuous, and two other categorical.
+
+<li class= "fragment fade-in"> Attendance: Number of days in class </li>
+<li class= "fragment fade-in"> Average score over all days </li>
+<li class= "fragment fade-in"> Sex: Coded as f or m </li>
+<li class= "fragment fade-in"> Day1: Archery score on first day </li>
+<li class= "fragment fade-in"> LastDay: Archery score on last day </li>
+<li class= "fragment fade-in"> Improvement: Last day - first day score </li>
+<li class= "fragment fade-in"> Improve: 1=improved or 0=did not improve </li>
+  
+  
+Summary Descriptors
+========================================================
+  
+  Let´s study some key elements from the data:
+  
+```{r, include=FALSE}
+library("Stat2Data")
+data(ArcheryData)
+```
+
+```{r}
+summary(ArcheryData)
+```
