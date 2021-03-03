@@ -64,7 +64,7 @@ Let´s take a look at the attandance of the participants according to their sex:
   
 ```{r, include=FALSE}
 library("Stat2Data")
-library(ggplot2)
+library("ggplot2")
 data(ArcheryData)
 ```
 
@@ -83,8 +83,6 @@ type: exclaim
 id: slide1
 
 ```{r, include=FALSE}
-library(plotly)
- 
 library(plotly)
 library("Stat2Data")
 data(ArcheryData)
